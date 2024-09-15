@@ -1,0 +1,124 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+    align-items: center;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.logo-title{
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    /* justify-content: space-evenly; */
+    margin: 0;
+    padding: 0;
+    font-size: 17px ;
+}
+
+.actions{
+    display: flex;
+    gap: 10px;
+   align-items: center;
+   position: relative;
+   right:20px ;
+   justify-content: space-around;
+   
+}
+
+.sign_in_button{
+    border-radius: 20px;
+    background-color:transparent;
+    border: 1px solid black;
+    /* color: white; */
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.count{
+    font-size: 25px;
+    padding: 2px 6px ;
+    background-color: red;
+    border-radius: 50px;
+}
+
+.cart_icon{
+    height: 30px;
+    position: relative;
+    transition: transform 0.3s;
+
+}
+
+.cart_icon:hover{
+    transform: scale(1.15);
+}
+
+.logo{
+    height: 70px;
+    display: flex;
+}
+
+
+.title{
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.ul li{
+    cursor: pointer;
+    padding: 5px 10px;
+    position: relative; 
+
+}
+
+
+.navbar ul li{
+  
+  position: relative; /* Set position relative */
+  /* color: #0087ca;  */
+}
+
+.navbar ul li:after {
+  content: ''; /* Add content after the element */
+  position: absolute; /* Position absolute for pseudo-element */
+  width: 100%; /* Full width */
+  transform: scaleX(0); /* Initial scale of 0 for underline effect */
+  height: 2px; /* Height of the underline */
+  bottom: 0; /* Align to bottom */
+  left: 0; /* Align to left */
+  background-color: #0087ca; /* Background color of the underline */
+  transform-origin: bottom right; /* Set transform origin */
+  transition: transform 0.25s ease-out; /* Transition effect for the underline */
+}
+
+.navbar ul li:hover:after {
+  transform: scaleX(1); /* Scale the underline on hover */
+  transform-origin: bottom left; /* Set transform origin */
+  
+}
+
+.navbar ul li:hover{
+    color: #0087ca ;
+}
+
+.sign_in_button:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+
