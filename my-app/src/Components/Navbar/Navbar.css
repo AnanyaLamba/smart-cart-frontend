@@ -6,7 +6,7 @@
     align-items: center;
     background-color: #f8f9fa;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow-x: hidden;
+ 
     box-sizing: border-box;
 }
 
@@ -79,7 +79,8 @@
 .ul li{
     cursor: pointer;
     padding: 5px 10px;
-    position: relative; 
+    position: relative;
+    /* text-decoration: none;  */
 
 }
 
@@ -88,6 +89,7 @@
   
   position: relative; /* Set position relative */
   /* color: #0087ca;  */
+  /* text-decoration: none; */
 }
 
 .navbar ul li:after {
@@ -101,16 +103,21 @@
   background-color: #0087ca; /* Background color of the underline */
   transform-origin: bottom right; /* Set transform origin */
   transition: transform 0.25s ease-out; /* Transition effect for the underline */
+ 
 }
 
 .navbar ul li:hover:after {
   transform: scaleX(1); /* Scale the underline on hover */
   transform-origin: bottom left; /* Set transform origin */
+  /* text-decoration: none; */
+  
   
 }
 
 .navbar ul li:hover{
     color: #0087ca ;
+    transform: scale(1.05);
+    /* text-decoration: none; */
 }
 
 .sign_in_button:hover{
@@ -119,6 +126,13 @@
     transform: scale(1.1);
 }
 
+.navbar a {
+    color:black;
+    text-decoration: none;
+}
 
+.navbar a:hover {
+    color: #0087ca;
+}
 
 

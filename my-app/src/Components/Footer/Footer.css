@@ -1,0 +1,70 @@
+.footer{
+    background-color: #f8f9fa;
+    /* display: flex; */
+    text-align: center;
+    font-family: "poopins",sans-serif;
+    padding: 20px;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo img{
+    height:50px;
+    margin-right: 10px;
+}
+
+.logo p{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(97, 93, 93);
+}
+.footer ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0 0 20px 0;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.footer ul li{
+    font-size: 20px;
+    color: #555;
+}
+
+.footer ul li:hover{
+    color: black;
+}
+
+.social_icon{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer_icon_container img{
+    height: 30px;
+    transition:transform 0.3s;
+}
+
+.footer_icon_container img:hover {
+    transform: scale(1.1); 
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid #ddd; 
+    margin: 20px 0;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #777; 
+}
