@@ -1,0 +1,50 @@
+/* src/Components/NewsLetter/NewsLetter.css */
+.newsletter {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter h1 {
+    font-size: 34px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 19px;
+    color: #777;
+    margin-bottom: 30px;
+    font-weight: lighter;
+}
+
+.newsletter div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ff4141;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #e63939;
+}

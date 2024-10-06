@@ -45,7 +45,7 @@
     cursor: pointer;
     margin-right: 20px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
-}
+    color: black;}
 
 .count{
     font-size: 25px;

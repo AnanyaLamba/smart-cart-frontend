@@ -3,8 +3,8 @@ import "./Navbar.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../Assets/logo.png";
-import cart_icon from "../Assets/cart_icon.png";
+import logo from "../Assets/logo.png/logo.png";
+import cart_icon from "../Assets/cart_icon.png/cart_icon.png";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("");
@@ -45,7 +45,7 @@ const Navbar = () => {
             setMenu("shopKids");
           }}
         >
-          <Link to="/kids" >Shop kids</Link>
+          <Link to="/kid" >Shop kids</Link>
           {menu === "shopKids" ? <hr /> : <></>}
         </li>
         <li
@@ -59,8 +59,8 @@ const Navbar = () => {
       </ul>
 
       <div className="actions">
-        <button className="sign_in_button">Sign In</button>
-        <img src={cart_icon} alt="cart_icon" className="cart_icon" />
+        <Link to="/login" ><button className="sign_in_button">Sign In</button></Link>
+        <Link to= "/cart"><img src={cart_icon} alt="cart_icon" className="cart_icon" /></Link>
         <div className="count">0</div>
       </div>
     </div>
