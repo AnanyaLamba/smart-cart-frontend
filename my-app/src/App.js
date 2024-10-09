@@ -30,7 +30,7 @@ function App() {
           ></Route>
           <Route
             path="/kid"
-            element={<ShopCategory category="Kids" banner={kid_banner} />}
+            element={<ShopCategory category="Kid" banner={kid_banner} />}
           ></Route>
           <Route path="/contact" element={<Contact />}></Route>
 
